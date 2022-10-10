@@ -34,6 +34,6 @@ class MainActivity : AppCompatActivity() {
             val weatherItemCopy = weatherItem.copy(System.currentTimeMillis(),28, "Krasnodar")
             Toast.makeText(applicationContext, weatherItemCopy.point, Toast.LENGTH_SHORT).show()
         }
-Ц
+
     }
 }
