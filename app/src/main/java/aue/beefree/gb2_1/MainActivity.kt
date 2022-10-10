@@ -30,6 +30,9 @@ class MainActivity : AppCompatActivity() {
             count++
         }
 
-
+        findViewById<Button>(R.id.btn_copy).setOnClickListener{
+            val weatherItemCopy = weatherItem.copy(System.currentTimeMillis(),28, "Krasnodar")
+            Toast.makeText(applicationContext, weatherItemCopy.point, Toast.LENGTH_SHORT).show()
+        }
     }
 }
